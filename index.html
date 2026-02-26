@@ -1,101 +1,136 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Engr. Leo Tutoring Services</title>
+    <title>Brad Leo Tutoring Services</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', sans-serif;
             margin: 0;
-            padding: 0;
-            background-color: #f4f6f8;
+            background: #f5f7fa;
+            color: #333;
         }
         header {
-            background-color: #0b3d91;
+            background: linear-gradient(135deg, #0b3d91, #0056b3);
             color: white;
-            padding: 20px;
+            padding: 60px 20px;
             text-align: center;
         }
-        nav {
-            text-align: center;
-            padding: 10px;
-            background-color: #092c6c;
-        }
-        nav a {
-            color: white;
-            margin: 15px;
-            text-decoration: none;
-            font-weight: bold;
+        header h1 {
+            margin: 0;
+            font-size: 40px;
         }
         section {
-            padding: 40px;
+            padding: 50px 20px;
             text-align: center;
         }
-        .subjects {
-            background-color: white;
-            margin: 20px auto;
-            width: 80%;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        .card {
+            background: white;
+            max-width: 800px;
+            margin: auto;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
         }
-        footer {
-            background-color: #0b3d91;
-            color: white;
-            text-align: center;
-            padding: 15px;
+        h2 {
+            color: #0b3d91;
+        }
+        input, select, textarea {
+            width: 90%;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
         }
         button {
-            background-color: #0b3d91;
+            background: #0b3d91;
             color: white;
-            padding: 10px 20px;
+            padding: 12px 25px;
             border: none;
             border-radius: 5px;
             cursor: pointer;
         }
         button:hover {
-            background-color: #092c6c;
+            background: #0056b3;
+        }
+        img {
+            max-width: 250px;
+            margin-top: 20px;
+        }
+        footer {
+            background: #0b3d91;
+            color: white;
+            padding: 20px;
+            text-align: center;
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Engr. Leo Tutoring Services</h1>
-    <p>Helping Future Engineers Succeed</p>
+    <h1>Brad Leo Tutoring</h1>
+    <p>Engineering • Mathematics • Power Plant • Industrial Plant • Machine Design • Plumbing Codes • Sample Board Exam Review</p>
 </header>
 
-<nav>
-    <a href="#about">About</a>
-    <a href="#subjects">Subjects</a>
-    <a href="#contact">Contact</a>
-</nav>
-
-<section id="about">
-    <h2>About Me</h2>
-    <p>I am Engr. Leo Jay Nuñez, a licensed Mechanical Engineer offering tutoring services in Engineering subjects, Mathematics, and board exam preparation.</p>
-</section>
-
-<section id="subjects">
-    <h2>Subjects Offered</h2>
-    <div class="subjects">
-        <p>✔ Engineering Mathematics</p>
-        <p>✔ Thermodynamics</p>
-        <p>✔ Machine Design</p>
-        <p>✔ Fluid Mechanics</p>
-        <p>✔ AutoCAD Basics</p>
+<section>
+    <div class="card">
+        <h2>About Me</h2>
+        <p>Licensed Mechanical Engineer offering tutoring in Engineering Mathematics and ME laws, Industrial and Power Plant, Machine Design, Plumbing Reviews, additional Free Autodesk Software(Autocad, Inventor, Revit) and Solidworks .</p>
     </div>
 </section>
 
-<section id="contact">
-    <h2>Contact Me</h2>
-    <p>Book a session today!</p>
-    <p>Email: your-email@gmail.com</p>
-    <p>Phone: 09XXXXXXXXX</p>
-    <button onclick="alert('Message sent! I will contact you soon.')">Book Now</button>
+<section>
+    <div class="card">
+        <h2>Book a Tutoring Session</h2>
+
+        <!-- Replace your-email@gmail.com with your real email -->
+        <form action="https://formsubmit.co/your-yodzyuuki1432@gmail.com" method="POST">
+            <input type="text" name="Name" placeholder="Full Name" required>
+            <input type="email" name="Email" placeholder="Email Address" required>
+
+            <select name="Subject" required>
+                <option value="">Select Subject</option>
+                <option>Engineering Mathematics</option>
+                <option>Thermodynamics</option>
+                <option>Machine Design</option>
+                <option>Fluid Mechanics</option>
+                <option>AutoCAD Basics</option>
+            </select>
+
+            <input type="date" name="Preferred Date" required>
+            <textarea name="Message" placeholder="Additional Notes"></textarea>
+
+            <button type="submit">Submit Booking</button>
+        </form>
+    </div>
+</section>
+
+<section>
+    <div class="card">
+        <h2>Pay via GCash</h2>
+        <p>Scan the QR below to complete your payment.</p>
+
+        <!-- Upload your GCash QR image and replace file name -->
+        <img src="gcash-qr.png" alt="GCash QR Code">
+    </div>
+</section>
+
+<section>
+    <div class="card">
+        <h2>Student Inquiry</h2>
+
+        <form action="https://formsubmit.co/your-email@gmail.com" method="POST">
+            <input type="text" name="Student Name" placeholder="Your Name" required>
+            <input type="email" name="Student Email" placeholder="Your Email" required>
+            <textarea name="Inquiry Message" placeholder="Your Question or Inquiry" required></textarea>
+
+            <button type="submit">Send Inquiry</button>
+        </form>
+    </div>
 </section>
 
 <footer>
-    <p>© 2025 Engr. Leo Tutoring Services</p>
+    © 2025 Engr. Leo Tutoring Services
 </footer>
 
 </body>
