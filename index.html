@@ -1,66 +1,78 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Brad Leo Tutoring Services</title>
+    <title>BradLeo Tutoring | Engineering Excellence</title> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
             font-family: 'Segoe UI', sans-serif;
             margin: 0;
-            background: #f5f7fa;
+            background: #f4f7fc;
             color: #333;
         }
         header {
-            background: linear-gradient(135deg, #0b3d91, #0056b3);
+            background: linear-gradient(135deg, #0b3d91, #004aad);
             color: white;
-            padding: 60px 20px;
+            padding: 80px 20px;
             text-align: center;
         }
         header h1 {
+            font-size: 42px;
             margin: 0;
-            font-size: 40px;
+        }
+        header p {
+            font-size: 18px;
+            opacity: 0.9;
         }
         section {
-            padding: 50px 20px;
+            padding: 60px 20px;
             text-align: center;
         }
         .card {
             background: white;
-            max-width: 800px;
+            max-width: 900px;
             margin: auto;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
         }
         h2 {
             color: #0b3d91;
         }
         input, select, textarea {
-            width: 90%;
+            width: 95%;
             padding: 12px;
             margin: 10px 0;
-            border-radius: 5px;
-            border: 1px solid #ccc;
+            border-radius: 6px;
+            border: 1px solid #ddd;
         }
         button {
             background: #0b3d91;
             color: white;
-            padding: 12px 25px;
+            padding: 12px 30px;
             border: none;
-            border-radius: 5px;
+            border-radius: 6px;
             cursor: pointer;
         }
         button:hover {
-            background: #0056b3;
+            background: #004aad;
         }
         img {
-            max-width: 250px;
+            width: 250px;
+            border-radius: 10px;
+            margin-top: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        .dashboard-box {
+            background: #eef3ff;
+            padding: 20px;
+            border-radius: 10px;
             margin-top: 20px;
         }
         footer {
             background: #0b3d91;
             color: white;
-            padding: 20px;
+            padding: 30px;
             text-align: center;
         }
     </style>
@@ -68,33 +80,37 @@
 <body>
 
 <header>
-    <h1>Brad Leo Tutoring</h1>
+     <h1>LeoTutoring</h1>
     <p>Engineering • Mathematics • Power Plant • Industrial Plant • Machine Design • Plumbing Codes • Sample Board Exam Review</p>
 </header>
-
-<section>
+    
+<!-- BOOKING -->
+    <section>
     <div class="card">
         <h2>About Me</h2>
         <p>Licensed Mechanical Engineer offering tutoring in Engineering Mathematics and ME laws, Industrial and Power Plant, Machine Design, Plumbing Reviews, additional Free Autodesk Software(Autocad, Inventor, Revit) and Solidworks .</p>
     </div>
 </section>
-
+    
 <section>
     <div class="card">
-        <h2>Book a Tutoring Session</h2>
+        <h2>Book a Session</h2>
 
-        <!-- Replace your-email@gmail.com with your real email -->
-        <form action="https://formsubmit.co/your-yodzyuuki1432@gmail.com" method="POST">
+        <form action="https://formsubmit.co/your-email@gmail.com" method="POST">
             <input type="text" name="Name" placeholder="Full Name" required>
             <input type="email" name="Email" placeholder="Email Address" required>
 
             <select name="Subject" required>
                 <option value="">Select Subject</option>
                 <option>Engineering Mathematics</option>
-                <option>Thermodynamics</option>
+                <option>Power Plant</option>
+                <option>Industrial Plant</option>
                 <option>Machine Design</option>
-                <option>Fluid Mechanics</option>
-                <option>AutoCAD Basics</option>
+                <option>Plumbing</option>
+                <option>Inventor</option>
+                <option>Revit</option>
+                <option>AutoCAD</option>
+                <option>Solidworks</option>
             </select>
 
             <input type="date" name="Preferred Date" required>
@@ -105,6 +121,7 @@
     </div>
 </section>
 
+<!-- PAYMENT -->
 <section>
     <div class="card">
         <h2>Pay via GCash</h2>
@@ -114,9 +131,45 @@
         <div style="text-align:center;">
     <img src="Picture1.png" alt="GCash QR Code" style="width:300px; border-radius:10px; box-shadow:0 5px 15px rgba(0,0,0,0.2);">
             <p>JESUS N.</p>
+
+        <h3>Upload Payment Confirmation</h3>
+
+        <!-- IMPORTANT: File upload needs external service -->
+        <form action="https://formsubmit.co/your-email@gmail.com" method="POST" enctype="multipart/form-data">
+            <input type="text" name="Student Name" placeholder="Your Name" required>
+            <input type="file" name="Payment Proof" required>
+            <button type="submit">Upload Receipt</button>
+        </form>
     </div>
 </section>
 
+<!-- AUTOMATIC ZOOM LINK -->
+<section>
+    <div class="card">
+        <h2>Join Your Zoom Session</h2>
+        <p>Click the button below at your scheduled time.</p>
+
+        <!-- Replace with your permanent Zoom link -->
+        <a href="https://zoom.us/j/yourmeetingID" target="_blank">
+            <button>Join Zoom Meeting</button>
+        </a>
+    </div>
+</section>
+
+<!-- STUDENT DASHBOARD -->
+<section>
+    <div class="card">
+        <h2>Student Dashboard</h2>
+
+        <div class="dashboard-box">
+            <p><strong>Status:</strong> Awaiting Payment Confirmation</p>
+            <p><strong>Next Session:</strong> To Be Scheduled</p>
+            <p><strong>Zoom Link:</strong> Will be sent via email after confirmation</p>
+        </div>
+    </div>
+</section>
+    
+<!-- Question -->  
 <section>
     <div class="card">
         <h2>Student Inquiry</h2>
@@ -132,10 +185,11 @@
 </section>
 
 <footer>
-    © 2025 Engr. Leo Tutoring Services
+    © 2026 Engr. Leo Tutoring Services
 </footer>
 
 </body>
 </html>
+
 
 
